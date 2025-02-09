@@ -92,6 +92,9 @@ print(f"O dobro de {number_input} é {double_number(number_input)}.")
 
 # 10) O sistema precisa contar quantas letras há em um nome:
 
-name = input("Digite um nome: ")
+def name_word (name):
+    return print(f"O nome '{name}' possui {len(name.replace(" ", ""))} letras.")
 
-print(f"O nome '{name}' possui {len(name.replace(" ", ""))} letras.")
+name_input = input("Digite um nome: ")
+name_word(name_input)
+
